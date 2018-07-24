@@ -43,7 +43,13 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import ru.exlmoto.astrosmash.AstroSmashEngine.InfoStrings;
+
+import com.google.android.gms.ads.InterstitialAd;
 
 public class AstroSmashLauncher extends Activity {
 
@@ -270,6 +276,8 @@ public class AstroSmashLauncher extends Activity {
 		InfoStrings.initializeInfo();
 
 		setContentView(R.layout.activity_astrosmashlauncher);
+
+		MobileAds.initialize(this, "ca-app-pub-1761948387867531~4823050061");
 
 		settingsStorage = getSharedPreferences("ru.exlmoto.astrosmash", MODE_PRIVATE);
 		// Check the first run

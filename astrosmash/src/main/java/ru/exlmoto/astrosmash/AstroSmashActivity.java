@@ -30,6 +30,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.Window;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 import ru.exlmoto.astrosmash.AstroSmashLauncher.AstroSmashSettings;
 import ru.exlmoto.astrosmash.AstroSmashEngine.Version;
 
@@ -42,6 +47,8 @@ public class AstroSmashActivity extends Activity {
 	private static AstroSmashView astroSmashView = null;
 
 	public static boolean paused = false;
+
+	private InterstitialAd mInterstitialAd;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -117,5 +124,15 @@ public class AstroSmashActivity extends Activity {
 		paused = false;
 		astroSmashView.checkHiScores(AstroSmashActivity.RESTART_GAME_NO);
 		super.onBackPressed();
+
+		mInterstitialAd = new InterstitialAd(this);
+		mInterstitialAd.setAdUnitId("ca-app-pub-1761948387867531/2879413007");
+		mInterstitialAd.loadAd(new AdRequest.Builder().build());
+		mInterstitialAd.setAdListener(new AdListener() {
+			@Override
+			public void onAdLoaded() {
+				mInterstitialAd.show();
+			}
+		});
 	}
 }

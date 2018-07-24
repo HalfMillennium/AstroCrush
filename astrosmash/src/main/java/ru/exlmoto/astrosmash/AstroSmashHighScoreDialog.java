@@ -37,6 +37,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import ru.exlmoto.astrosmash.AstroSmashLauncher.AstroSmashSettings;
+import com.google.android.gms.ads.MobileAds;
 
 public class AstroSmashHighScoreDialog extends Activity {
 
