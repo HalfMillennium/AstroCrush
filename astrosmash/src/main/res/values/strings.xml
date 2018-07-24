@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AstroCrush</string>
+    <string name="CoverString">AstroCrush Covers</string>
+    <string name="RunButton">Run AstroCrush!</string>
+    <string name="SettingsLabel">Settings</string>
+    <string name="AboutButton">About Game</string>
+    <string name="Radio120">120p</string>
+    <string name="Radio176">176p</string>
+    <string name="Radio240">240p</string>
+    <string name="Radio480">480p</string>
+    <string name="AutoFire">Auto Fire</string>
+    <string name="Sound">Sound</string>
+    <string name="Vibro">Vibration Haptics</string>
+    <string name="Antialiasing">Antialiasing</string>
+    <string name="TouchRect">Show Touch Rect</string>
+    <string name="ColorStars">Colorize Stars</string>
+    <string name="FPS">Draw FPS</string>
+    <string name="GraphicsLabel">Graphics Scale</string>
+    <string name="HiScoreTable">High Score Table</string>
+    <string name="Players">Players List</string>
+    <string name="Scores">0</string>
+    <string name="StringOK">OK</string>
+    <string name="StringCancel">Cancel</string>
+    <string name="HintString">Player Name</string>
+    <string name="HiScoreTextHint">You get high score! Please enter your name:</string>
+    <string name="GameOver">: Game Over!</string>
+    <string name="Score">"Score: "</string>
+    <string name="Credits3">Credits 3</string>
+    <string name="Credits2">Credits 2</string>
+    <string name="Credits1">Credits 1</string>
+    <string name="CreditsHelp">Help</string>
+    <string name="ButtonHelp">Help Game</string>
+    <string name="AboutHelpLabel">About &amp; Help</string>
+    <string name="Version">v1.2 | 05-MAY-2017</string>
+    <string name="IconDesc">Icon AstroCrush</string>
+    <string name="AboutString">Porting from Java ME (J2ME) MIDlet to Android OS application with using SurfaceView Canvas drawing:\n• © 2016 S. \"EXL\" KLS\nemail: exl@bk.ru\nemail: exlmotodev@gmail.com\n\nSource Code:\nhttp://github.com/EXL/AstroSmash\n\nArticle About Porting AstroSmash:\nhttp://exlmoto.ru/astrosmash-droid\n\nThanks to:\n• Danil Medvedev for idea and support;\n• Nikita Prokopchik for cool photos;\n• mbv06 for testing APK-package;\n• baat for help and support;\n• Zorge.R for hosting, patience and help.</string>
+    <string name="DoubleFire">Double Fire</string>
+
+</resources>
